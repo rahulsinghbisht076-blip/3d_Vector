@@ -67,8 +67,8 @@ class Point3d:
         return "{} units or {} units".format(dis,radical_form)
     def mid_point(self,other):
         new_i=(self.i+other.i)/2
-        new_j=(self.j-other.j)/2
-        new_k=(self.k-other.k)/2
+        new_j=(self.j+other.j)/2
+        new_k=(self.k+other.k)/2
         new=Point3d(new_i,new_j,new_k)
         return Point3d.representation(new)
     def divide_section_internal(self,other,m,n):
